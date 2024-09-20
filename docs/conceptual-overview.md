@@ -57,3 +57,15 @@ export function Component() {
   )
 }
 ```
+
+### Validation
+For scalars, validation performs a "narrowing" function. For example, it maps a `string | null` to a `string`. In `TextField`, there are two validation options: `required` and `validate`. `validate` will only ever get called on a nonempty input. `required: true` will cause an error for an empty text input. A similar variant of this logic exists for `ChoiceField`.
+
+### Checkpointing and resetting
+In some cases, you'll want to save the current state to allow resetting back to a specific point. One example is: An inline form that will do some patch, and let the user reset back to the most recently saved point. You can `checkpoint` the state when the save is confirmed, and then any `reset` to the state will go back to that checkpointed value.
+
+### Interaction state
+There are three simple interaction states:
+* `'clean'` - the user has not interacted with this field or the field has been `checkpoint`ed since its last interaction
+* `'editing'` - the user is currently interacting with the field (i.e., no `blur` has been called since the last `focus`)
+* `'dirty'` - the user has interacted with the field since the last `checkpoint`

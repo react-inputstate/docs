@@ -36,8 +36,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/ris-social-card.png',
     navbar: {
       title: 'React Input State',
       logo: {
