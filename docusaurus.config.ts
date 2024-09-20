@@ -74,7 +74,7 @@ const config: Config = {
           items: [
             {
               label: 'X',
-              href: 'https://x.com/react-inputstate',
+              href: 'https://x.com/reactinputstate',
             },
           ],
         },
