@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'React Nuclear',
+  title: 'React Nuclear ☢️',
   tagline: 'Type-safe, composable, and performant input states',
   favicon: 'img/favicon.ico',
 
@@ -41,7 +41,7 @@ const config: Config = {
       title: 'React Nuclear',
       logo: {
         alt: 'Logo',
-        src: 'img/ris-logo.png',
+        src: 'img/reactnuclear.png',
       },
       items: [
         {
