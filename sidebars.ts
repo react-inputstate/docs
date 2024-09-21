@@ -21,6 +21,11 @@ const sidebars: SidebarsConfig = {
         id: 'examples/basic',
         label: 'Basic example',
       },
+      {
+        type: 'doc',
+        id: 'examples/complex',
+        label: 'Complex example ',
+      }
     ]
   }],
 };

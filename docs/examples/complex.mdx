@@ -1,0 +1,17 @@
+import ComplexComponent from "@site/docs/examples/ComplexComponent.tsx"
+import MyComponentSource from '!!raw-loader!./ComplexComponent';
+import CodeBlock from '@theme/CodeBlock';
+
+# Complex example
+
+Here's a more complex example that uses more of the React Nuclear features:
+
+<ComplexComponent />
+
+You can check all the values that React Nuclear keeps track of by clicking the 🛠️ icon next to "Party input".
+
+I've also include a number to the left of each input that shows how many re-renders have happened for that input.
+
+Source:
+
+<CodeBlock language="tsx">{MyComponentSource}</CodeBlock>
