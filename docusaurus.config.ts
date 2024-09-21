@@ -51,6 +51,12 @@ const config: Config = {
           label: 'Intro',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'examples',
+          position: 'left',
+          label: 'Examples',
+        },
+        {
           href: 'https://github.com/react-inputstate/docs',
           label: 'GitHub',
           position: 'right',
