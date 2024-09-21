@@ -36,7 +36,7 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/ris-social-card.png',
+    image: 'img/react-nuclear-social-card.png',
     navbar: {
       title: 'React Nuclear',
       logo: {
