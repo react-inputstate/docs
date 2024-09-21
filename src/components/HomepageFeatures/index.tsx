@@ -17,7 +17,7 @@ const FeatureList: FeatureItem[] = [
     icon: '🔍',
     description: (
       <>
-        React Input State was designed from the ground up to be fully type-safe, making it easy to make changes to complex inputs.
+        React Nuclear was designed from the ground up to be fully type-safe, making it easy to make changes to complex inputs.
       </>
     ),
   },

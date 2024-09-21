@@ -44,7 +44,7 @@ const inputState = F.useInit(F.Text())
 ### Basic usage of concrete instantiation (i.e., the "input state")
 Now that it's concrete, it's called the "input state" (as opposed to the "spec"). Your basic usage of the input state is to provide statefulness into a literal text input. React Input State is fully headless and completely agnostic to whatever you do for input UIs, but here's an example using the basic html input.
 ```
-import { F } from 'react-inputstate'
+import { F } from 'react-nuclear'
 
 export function Component() {
   const inputState = F.useInit(F.Text())

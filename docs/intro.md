@@ -4,18 +4,17 @@ sidebar_position: 1
 
 # Introduction
 
-Get started with **React Input State** in 5 minutes.
+Get started with **React Nuclear** in 5 minutes.
 
 ### Installation
-
 ```
-npm install react-inputstate
+npm install react-nuclear
 ```
 
 ### Create your first input state
 
 ```
-import { F } from 'react-inputstate'
+import { F } from 'react-nuclear'
 
 export function Component() {
   const inputState = F.useInit(F.Text())

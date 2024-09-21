@@ -3,13 +3,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'React Input State',
+  title: 'React Nuclear',
   tagline: 'Type-safe, composable, and performant input states',
   favicon: 'img/favicon.ico',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  url: 'https://react-inputstate.com',
+  url: 'https://reactnuclear.com',
   baseUrl: '/',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -38,7 +38,7 @@ const config: Config = {
   themeConfig: {
     image: 'img/ris-social-card.png',
     navbar: {
-      title: 'React Input State',
+      title: 'React Nuclear',
       logo: {
         alt: 'Logo',
         src: 'img/ris-logo.png',
@@ -51,7 +51,7 @@ const config: Config = {
           label: 'Intro',
         },
         {
-          href: 'https://github.com/react-inputstate/react-inputstate',
+          href: 'https://github.com/react-inputstate/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -74,7 +74,7 @@ const config: Config = {
           items: [
             {
               label: 'X',
-              href: 'https://x.com/reactinputstate',
+              href: 'https://x.com/reactnuclear',
             },
           ],
         },
@@ -83,12 +83,12 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/react-inputstate/react-inputstate',
+              href: 'https://github.com/react-inputstate/docs',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} React Input State`,
+      copyright: `Copyright © ${new Date().getFullYear()} React Nuclear`,
     },
     prism: {
       theme: prismThemes.github,

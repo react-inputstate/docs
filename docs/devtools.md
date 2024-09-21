@@ -19,7 +19,7 @@ During development, bugs will oftentimes make it very difficult to know what fie
 ### In your code
 
 ```
-import { Devtools } from 'react-inputstate'
+import { Devtools } from 'react-nuclear'
 
 function Component() {
   return (
