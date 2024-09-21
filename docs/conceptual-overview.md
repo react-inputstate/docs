@@ -39,7 +39,7 @@ Because abstract schemas are really just specs, you can reuse them or compose th
 ```
 const inputState = F.useInit(F.Text())
 ```
-`useInit` is the concretizer. It gives the schemas the statefulness they need in order to actual start tracking state accord to its spec, as well as optionally providing initial values to the state.
+`useInit` is the concretizer. It gives the schemas the statefulness they need in order to actual start tracking state according to its spec, as well as optionally providing initial values to the state.
 
 ### Basic usage of concrete instantiation (i.e., the "input state")
 Now that it's concrete, it's called the "input state" (as opposed to the "spec"). Your basic usage of the input state is to provide statefulness into a literal text input. React Input State is fully headless and completely agnostic to whatever you do for input UIs, but here's an example using the basic html input.
