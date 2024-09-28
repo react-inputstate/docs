@@ -1,6 +1,6 @@
 interface Props {
-  title: string
-  onClick: () => void
+  title: string;
+  onClick: () => void;
 }
 
 export default function Button({ title, onClick }: Props) {
@@ -8,12 +8,12 @@ export default function Button({ title, onClick }: Props) {
     <button
       onClick={onClick}
       style={{
-        width: 'min-content',
-        height: 'min-content',
-        textWrap: 'nowrap',
+        width: "min-content",
+        height: "min-content",
+        textWrap: "nowrap",
       }}
     >
       {title}
     </button>
-  )
+  );
 }

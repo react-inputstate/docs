@@ -1,95 +1,95 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: 'React Nuclear ☢️',
-  tagline: 'Type-safe, composable, and performant input states',
-  favicon: 'img/favicon.ico',
+  title: "React Nuclear ☢️",
+  tagline: "Type-safe, composable, and performant input states",
+  favicon: "img/favicon.ico",
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  url: 'https://reactnuclear.com',
-  baseUrl: '/',
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  url: "https://reactnuclear.com",
+  baseUrl: "/",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
-          sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/react-inputstate/docs',
+          sidebarPath: "./sidebars.ts",
+          editUrl: "https://github.com/react-inputstate/docs",
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: "./src/css/custom.css",
         },
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
-    image: 'img/react-nuclear-social-card.png',
+    image: "img/react-nuclear-social-card.png",
     navbar: {
-      title: 'React Nuclear',
+      title: "React Nuclear",
       logo: {
-        alt: 'Logo',
-        src: 'img/reactnuclear.png',
+        alt: "Logo",
+        src: "img/reactnuclear.png",
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'introSidebar',
-          position: 'left',
-          label: 'Intro',
+          type: "docSidebar",
+          sidebarId: "introSidebar",
+          position: "left",
+          label: "Intro",
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'examples',
-          position: 'left',
-          label: 'Examples',
+          type: "docSidebar",
+          sidebarId: "examples",
+          position: "left",
+          label: "Examples",
         },
         {
-          href: 'https://github.com/react-inputstate/docs',
-          label: 'GitHub',
-          position: 'right',
+          href: "https://github.com/react-inputstate/docs",
+          label: "GitHub",
+          position: "right",
         },
       ],
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Docs',
+          title: "Docs",
           items: [
             {
-              label: 'Intro',
-              to: '/docs/intro',
+              label: "Intro",
+              to: "/docs/intro",
             },
           ],
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'X',
-              href: 'https://x.com/reactnuclear',
+              label: "X",
+              href: "https://x.com/reactnuclear",
             },
           ],
         },
         {
-          title: 'More',
+          title: "More",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/react-inputstate/docs',
+              label: "GitHub",
+              href: "https://github.com/react-inputstate/docs",
             },
           ],
         },

@@ -1,5 +1,5 @@
-import Typography from './Typography'
-import { ReactNode } from 'react'
+import Typography from "./Typography";
+import { ReactNode } from "react";
 
 export namespace Layout {
   export function Stack({
@@ -7,58 +7,58 @@ export namespace Layout {
     center,
     children,
   }: {
-    gap?: number
-    center?: boolean
-    children: ReactNode
+    gap?: number;
+    center?: boolean;
+    children: ReactNode;
   }) {
     return (
       <div
         style={{
-          display: 'flex',
+          display: "flex",
           gap,
-          alignItems: center ? 'center' : undefined,
+          alignItems: center ? "center" : undefined,
         }}
       >
         {children}
       </div>
-    )
+    );
   }
 
   export function VStack({
     gap,
     children,
   }: {
-    gap?: number
-    children: ReactNode
+    gap?: number;
+    children: ReactNode;
   }) {
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', gap }}>
+      <div style={{ display: "flex", flexDirection: "column", gap }}>
         {children}
       </div>
-    )
+    );
   }
 
   export function Module({ children }: { children: ReactNode }) {
     return (
       <div
         style={{
-          display: 'flex',
-          flexDirection: 'column',
+          display: "flex",
+          flexDirection: "column",
           gap: 32,
           maxWidth: 660,
-          marginLeft: 'auto',
-          marginRight: 'auto',
+          marginLeft: "auto",
+          marginRight: "auto",
           marginTop: 16,
           marginBottom: 16,
           padding: 16,
           borderRadius: 8,
-          background: '#eaeaea',
-          boxShadow: '0px 4px 8px 1px rgba(0,0,0,0.2)',
+          background: "#eaeaea",
+          boxShadow: "0px 4px 8px 1px rgba(0,0,0,0.2)",
         }}
       >
         {children}
       </div>
-    )
+    );
   }
 
   export function Section({
@@ -67,10 +67,10 @@ export namespace Layout {
     badge,
     children,
   }: {
-    title: string
-    description?: string
-    badge?: ReactNode
-    children: ReactNode
+    title: string;
+    description?: string;
+    badge?: ReactNode;
+    children: ReactNode;
   }) {
     return (
       <VStack gap={8}>
@@ -83,6 +83,6 @@ export namespace Layout {
         </VStack>
         {children}
       </VStack>
-    )
+    );
   }
 }

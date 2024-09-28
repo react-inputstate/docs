@@ -7,6 +7,7 @@ sidebar_position: 1
 Get started with **React Nuclear** in 5 minutes.
 
 ### Installation
+
 ```
 npm install react-nuclear
 ```
@@ -29,12 +30,15 @@ export function Component() {
 ```
 
 ### F.Text
+
 This is the "spec" you've created for your input shape. Right now, it's just a simple scalar value. We'll get to creating more complex, multi-dimensional inputs later.
 
 ### F.useInit
+
 This is what gives statefulness to your spec.
 
-### Preview to where the *real* value of this library comes in
+### Preview to where the _real_ value of this library comes in
+
 ```
 const todoListSpec = F.Group({
   title: F.Text(),

@@ -1,10 +1,10 @@
-import { F, Devtools } from 'react-nuclear'
-import TextInput from '@site/src/components/TextInput'
-import { Layout } from '@site/src/components/Layout'
-import Divider from '@site/src/components/Divider'
-import Checkbox from '@site/src/components/Checkbox'
-import Button from '@site/src/components/Button'
-import {random} from '@site/src/utils/common'
+import { F, Devtools } from "react-nuclear";
+import TextInput from "@site/src/components/TextInput";
+import { Layout } from "@site/src/components/Layout";
+import Divider from "@site/src/components/Divider";
+import Checkbox from "@site/src/components/Checkbox";
+import Button from "@site/src/components/Button";
+import { random } from "@site/src/utils/common";
 
 export default function ComplexComponent() {
   const partyInput = F.useInit(
@@ -16,9 +16,9 @@ export default function ComplexComponent() {
       }),
     }),
     {
-    initValue: { invitees: [{ listId: random() }] },
-    }
-  )
+      initValue: { invitees: [{ listId: random() }] },
+    },
+  );
 
   return (
     <Layout.Module>
@@ -62,6 +62,5 @@ export default function ComplexComponent() {
         </Layout.VStack>
       </Layout.Section>
     </Layout.Module>
-  )
-
+  );
 }
