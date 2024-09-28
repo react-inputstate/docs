@@ -1,9 +1,6 @@
 import clsx from "clsx";
 import Heading from "@theme/Heading";
 import styles from "./styles.module.css";
-import Helmet from "@site/static/img/helmet.png";
-import Bricks from "@site/static/img/bricks.png";
-import Gears from "@site/static/img/gears.png";
 
 type FeatureItem = {
   title: string;
