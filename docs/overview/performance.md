@@ -9,6 +9,7 @@ sidebar_position: 3
 If you have portions of your component tree that are expensive to render, you might run into performance issues with managing statefulness high in the tree. React is very good about managing expensive re-rerenders, so it's only in very complex cases that it's worth it to optimize renders. With React Input State, all state objects returned from the `useInit` function are stable unless the internal value has changed. This means that you can use `memo` to prevent portions of the tree to render. React will still re-render high up in the tree on each change, but you can prevent that re-render loop from propagating downwards too deeply.
 
 ### Basic example
+
 ```jsx
 interface InputProps {
   title: string

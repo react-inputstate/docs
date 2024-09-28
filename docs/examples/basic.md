@@ -32,6 +32,7 @@ export function SignUpPage() {
   )
 }
 ```
+
 Now, you should have a super simple UI that will look something like this (depending on how you implement your Layout and TextInput).
 
 <img src="/img/sign-up-ui.png" width="200" />
@@ -39,6 +40,7 @@ Now, you should have a super simple UI that will look something like this (depen
 ### Adding validation
 
 Now let's define how we validate the form overall:
+
 ```
 export function SignUpPage() {
   ...
@@ -50,6 +52,7 @@ export function SignUpPage() {
   ...
 }
 ```
+
 Notice the type annotation present on the `validation` object.
 
 <img src="/img/sign-up-validation-type.png" width="400" />
@@ -75,6 +78,7 @@ export function SignUpPage() {
 ```
 
 ### Finally, we end up with something like this:
+
 ```
 import { F } from 'react-nuclear'
 import { TextInput, Layout, Button } from '../my-custom-components'
@@ -108,4 +112,3 @@ export function SignUpPage() {
   )
 }
 ```
-

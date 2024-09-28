@@ -1,17 +1,17 @@
-import { memo, useRef } from 'react'
-import { Layout } from './Layout'
-import Typography from './Typography'
+import { memo, useRef } from "react";
+import { Layout } from "./Layout";
+import Typography from "./Typography";
 
 interface InputProps {
-  title?: string
-  placeholder?: string
-  width?: number
-  value: string
-  update: (newValue: string) => void
-  focus: () => void
-  blur: () => void
-  istate: 'clean' | 'dirty' | 'editing'
-  error?: string
+  title?: string;
+  placeholder?: string;
+  width?: number;
+  value: string;
+  update: (newValue: string) => void;
+  focus: () => void;
+  blur: () => void;
+  istate: "clean" | "dirty" | "editing";
+  error?: string;
 }
 
 const TextInput = memo(
@@ -26,8 +26,8 @@ const TextInput = memo(
     placeholder,
     istate,
   }: InputProps) => {
-    const renderCountRef = useRef(0)
-    renderCountRef.current += 1
+    const renderCountRef = useRef(0);
+    renderCountRef.current += 1;
 
     return (
       <Layout.VStack gap={8}>
@@ -46,15 +46,15 @@ const TextInput = memo(
               placeholder={placeholder}
             />
           </Layout.Stack>
-          {error && istate === 'dirty' && (
-            <span style={{ color: '#FF5733' }}>
+          {error && istate === "dirty" && (
+            <span style={{ color: "#FF5733" }}>
               <Typography variant="label">{error}</Typography>
             </span>
           )}
         </Layout.VStack>
       </Layout.VStack>
-    )
+    );
   },
-)
+);
 
-export default TextInput
+export default TextInput;
