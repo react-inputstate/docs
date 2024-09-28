@@ -4,7 +4,6 @@ import { Layout } from "@site/src/components/Layout";
 import Divider from "@site/src/components/Divider";
 import Checkbox from "@site/src/components/Checkbox";
 import Button from "@site/src/components/Button";
-import { random } from "@site/src/utils/common";
 
 export default function ComplexComponent() {
   const partyInput = F.useInit(
@@ -15,9 +14,7 @@ export default function ComplexComponent() {
         name: F.Text({ required: true }),
       }),
     }),
-    {
-      initValue: { invitees: [{ listId: random() }] },
-    },
+    { initValue: { invitees: [undefined] } },
   );
 
   return (
@@ -53,9 +50,7 @@ export default function ComplexComponent() {
           ))}
           <Layout.Stack gap={4}>
             <Button
-              onClick={() =>
-                F.control(partyInput.invitees).append({ listId: random() })
-              }
+              onClick={() => F.control(partyInput.invitees).append()}
               title="Add"
             />
           </Layout.Stack>
