@@ -16,18 +16,12 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <h2 className="hero__subtitle">{siteConfig.tagline}</h2>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }} className={styles.buttons}>
+        <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/overview/intro"
           >
             5 minute intro ⏱️
-          </Link>
-          <Link
-            className="button button--lg"
-            to="https://npmjs.org/package/react-nuclear"
-          >
-            View package
           </Link>
         </div>
       </div>
@@ -37,9 +31,7 @@ function HomepageHeader() {
 
 export default function Home(): JSX.Element {
   return (
-    <Layout
-      description="Create type-safe, composable, and performant input states"
-    >
+    <Layout description="Create type-safe, composable, and performant input states">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
