@@ -79,10 +79,18 @@ const config: Config = {
               label: "Intro",
               to: "/docs/overview/intro",
             },
+            {
+              label: "API",
+              to: "/docs/api/fields",
+            },
+            {
+              label: "Examples",
+              to: "/docs/examples/basic",
+            },
           ],
         },
         {
-          title: "Community",
+          title: "Social",
           items: [
             {
               label: "X",
@@ -96,6 +104,10 @@ const config: Config = {
             {
               label: "GitHub",
               href: "https://github.com/react-inputstate/docs",
+            },
+            {
+              label: "Npm",
+              href: "https://npmjs.org/package/react-nuclear",
             },
           ],
         },
