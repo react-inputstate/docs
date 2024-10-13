@@ -1,0 +1,15 @@
+---
+sidebar_position: 3
+---
+
+import DependentExampleComponent from "@site/docs/examples/DependentExampleComponent.tsx";
+import MyComponentSource from "!!raw-loader!./DependentExampleComponent";
+import CodeBlock from "@theme/CodeBlock";
+
+# Input dependencies example
+
+<DependentExampleComponent />
+
+Source:
+
+<CodeBlock language="tsx">{MyComponentSource}</CodeBlock>

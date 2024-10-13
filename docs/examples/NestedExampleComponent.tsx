@@ -5,17 +5,24 @@ import Divider from "@site/src/components/Divider";
 import Checkbox from "@site/src/components/Checkbox";
 import Button from "@site/src/components/Button";
 
-export default function ComplexComponent() {
-  const partyInput = F.useInit(
-    F.Group({
-      name: F.Text({ required: true }),
-      invitees: F.List({
-        isVip: F.Toggle(),
-        name: F.Text({ required: true }),
-      }),
-    }),
-    { initValue: { invitees: [undefined] } },
-  );
+const partySchema = F.Group({
+  name: F.Text({ required: true }),
+  invitees: F.List({
+    isVip: F.Toggle(),
+    name: F.Text({ required: true }),
+  }),
+});
+
+export default function NestedExampleComponent() {
+  const partyInput = F.useInit(partySchema, {
+    initValue: {
+      invitees: [
+        { name: "Anne", isVip: true },
+        { name: "Bob" },
+        { name: "Carl" },
+      ],
+    },
+  });
 
   return (
     <Layout.Module>

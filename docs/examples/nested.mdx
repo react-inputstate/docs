@@ -1,0 +1,21 @@
+---
+sidebar_position: 2
+---
+
+import NestedExampleComponent from "@site/docs/examples/NestedExampleComponent.tsx";
+import MyComponentSource from "!!raw-loader!./NestedExampleComponent";
+import CodeBlock from "@theme/CodeBlock";
+
+# Nested inputs example
+
+Here's a more complex example that uses more of the React Nuclear features:
+
+<NestedExampleComponent />
+
+You can check all the values that React Nuclear keeps track of by clicking the 🛠️ icon next to "Party input".
+
+I've also included a number to the left of each input that shows how many re-renders have happened for that input.
+
+Source:
+
+<CodeBlock language="tsx">{MyComponentSource}</CodeBlock>
